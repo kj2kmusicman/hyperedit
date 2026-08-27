@@ -239,8 +239,8 @@ export default function Timeline({
               onClick={onPlayPause}
               className={`p-1.5 rounded transition-all ${
                 isPlaying
-                  ? 'bg-[#39FF14]/20 text-[#39FF14] ring-1 ring-[#39FF14]/60 shadow-[0_0_8px_rgba(57,255,20,0.4)]'
-                  : 'bg-zinc-700 hover:bg-zinc-600 hover:text-[#39FF14]'
+                  ? 'bg-[#10B981]/20 text-[#10B981] ring-1 ring-[#10B981]/60 shadow-[0_0_8px_rgba(16,185,129,0.4)]'
+                  : 'bg-zinc-700 hover:bg-zinc-600 hover:text-[#10B981]'
               }`}
               title={isPlaying ? 'Pause' : 'Play'}
             >
@@ -292,7 +292,7 @@ export default function Timeline({
               onClick={onToggleAutoSnap}
               className={`p-1.5 rounded transition-all ${
                 autoSnap
-                  ? 'bg-[#39FF14]/15 text-[#39FF14] ring-1 ring-[#39FF14]/40'
+                  ? 'bg-[#10B981]/15 text-[#10B981] ring-1 ring-[#10B981]/40'
                   : 'bg-zinc-700 hover:bg-zinc-600 text-zinc-400'
               }`}
               title={autoSnap ? 'Auto-snap ON: Clips shift when deleting' : 'Auto-snap OFF: Gaps remain when deleting'}
@@ -491,7 +491,7 @@ export default function Timeline({
 
             {/* Playhead — neon green so it pops against silver clips */}
             <div
-              className="absolute top-0 bottom-0 w-0.5 bg-[#39FF14] shadow-[0_0_8px_rgba(57,255,20,0.8)] z-40 pointer-events-none"
+              className="absolute top-0 bottom-0 w-0.5 bg-[#10B981] shadow-[0_0_8px_rgba(16,185,129,0.8)] z-40 pointer-events-none"
               style={{ left: `${currentTime * pixelsPerSecond}px` }}
             >
               {/* Playhead handle */}
@@ -499,7 +499,7 @@ export default function Timeline({
                 className="absolute -top-0 -left-2.5 w-5 h-5 cursor-ew-resize pointer-events-auto"
                 onMouseDown={handlePlayheadMouseDown}
               >
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-[#39FF14] drop-shadow-[0_0_4px_rgba(57,255,20,0.8)]" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-[#10B981] drop-shadow-[0_0_4px_rgba(16,185,129,0.8)]" />
               </div>
             </div>
           </div>

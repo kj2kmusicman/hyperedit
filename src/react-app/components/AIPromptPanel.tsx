@@ -2296,10 +2296,10 @@ export default function AIPromptPanel({
       {/* Header */}
       <div className="p-4 border-b border-zinc-800/50">
         <div className="flex items-center gap-2 mb-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-zinc-500 to-zinc-500 rounded-lg flex items-center justify-center">
-            <Sparkles className="w-4 h-4" />
+          <div className="w-8 h-8 bg-[#10B981] rounded-lg flex items-center justify-center">
+            <Sparkles className="w-4 h-4 text-black" />
           </div>
-          <h2 className="font-semibold">HyperEdit AI</h2>
+          <h2 className="font-semibold"><span className="text-white">Next</span><span className="text-[#10B981]">Money</span> AI</h2>
         </div>
         <p className="text-xs text-zinc-400">
           Describe what you want to do with your video

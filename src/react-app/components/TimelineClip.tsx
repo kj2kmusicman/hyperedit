@@ -170,12 +170,12 @@ export default function TimelineClip({
       onMouseDown={handleMouseDown}
       className={`absolute rounded-md bg-gradient-to-r ${colorClass} ${
         isDragging
-          ? 'opacity-80 scale-105 shadow-xl shadow-black/50 z-30 cursor-grabbing ring-2 ring-[#39FF14]'
+          ? 'opacity-80 scale-105 shadow-xl shadow-black/50 z-30 cursor-grabbing ring-2 ring-[#10B981]'
           : isResizingLeft || isResizingRight
-            ? 'cursor-ew-resize z-20 ring-2 ring-[#39FF14]'
+            ? 'cursor-ew-resize z-20 ring-2 ring-[#10B981]'
             : isSelected
-              ? 'ring-2 ring-[#39FF14] shadow-[0_0_12px_rgba(57,255,20,0.4)] z-20 cursor-grab'
-              : 'ring-1 ring-zinc-500/50 hover:ring-[#39FF14]/70 z-10 cursor-grab'
+              ? 'ring-2 ring-[#10B981] shadow-[0_0_12px_rgba(16,185,129,0.4)] z-20 cursor-grab'
+              : 'ring-1 ring-zinc-500/50 hover:ring-[#10B981]/70 z-10 cursor-grab'
       } transition-all duration-75`}
       style={{
         left: `${left}px`,
@@ -185,10 +185,10 @@ export default function TimelineClip({
       }}
     >
       {/* Left edge indicator - neon green line marks cut point */}
-      <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#39FF14] rounded-l-md shadow-[0_0_6px_rgba(57,255,20,0.7)]" />
+      <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#10B981] rounded-l-md shadow-[0_0_6px_rgba(16,185,129,0.7)]" />
 
       {/* Right edge indicator - neon green line marks cut point */}
-      <div className="absolute right-0 top-0 bottom-0 w-1 bg-[#39FF14] rounded-r-md shadow-[0_0_6px_rgba(57,255,20,0.7)]" />
+      <div className="absolute right-0 top-0 bottom-0 w-1 bg-[#10B981] rounded-r-md shadow-[0_0_6px_rgba(16,185,129,0.7)]" />
 
       {/* Left resize handle */}
       <div

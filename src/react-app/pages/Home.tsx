@@ -1642,16 +1642,16 @@ export default function Home() {
   const currentStatus = status || legacyStatus;
 
   return (
-    <div className="flex flex-col h-screen bg-zinc-950 text-white overflow-hidden">
+    <div className="flex flex-col h-screen bg-[#0A0A0A] text-white overflow-hidden">
       {/* Header */}
-      <header className="flex items-center justify-between px-6 py-3 bg-zinc-900/50 border-b border-zinc-800/50 backdrop-blur-sm">
+      <header className="flex items-center justify-between px-6 py-3 bg-[#111111]/80 border-b border-zinc-800/50 backdrop-blur-sm">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-zinc-500 to-zinc-500 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-[#10B981] rounded-lg flex items-center justify-center">
               <Sparkles className="w-5 h-5" />
             </div>
-            <h1 className="text-xl font-bold bg-gradient-to-r from-zinc-400 to-zinc-400 bg-clip-text text-transparent">
-              HyperEdit
+            <h1 className="text-xl font-bold">
+              <span className="text-white">Next</span><span className="text-[#10B981]">Money</span> Studio
             </h1>
           </div>
           {currentStatus && (
@@ -1683,7 +1683,7 @@ export default function Home() {
               )}
             </>
           )}
-          <button className="px-4 py-2 bg-gradient-to-r from-zinc-500 to-zinc-500 hover:from-zinc-600 hover:to-zinc-600 rounded-lg text-sm font-medium transition-all">
+          <button className="px-4 py-2 bg-[#10B981] hover:from-zinc-600 hover:to-zinc-600 rounded-lg text-sm font-medium transition-all">
             AI Edit
           </button>
         </div>
@@ -1802,7 +1802,7 @@ export default function Home() {
 
             {/* Clip/Caption Properties Panel (shown when clip is selected) */}
             {selectedClipId && (
-              <div className="h-1/2 border-t border-zinc-800/50 bg-zinc-900/50 overflow-hidden">
+              <div className="h-1/2 border-t border-zinc-800/50 bg-[#111111]/80 overflow-hidden">
                 {selectedCaptionData ? (
                   <CaptionPropertiesPanel
                     captionData={selectedCaptionData}
@@ -1869,7 +1869,7 @@ export default function Home() {
             minHeight={150}
             maxHeight={500}
             position="bottom"
-            className="bg-zinc-900/50 border-t border-zinc-800/50 overflow-hidden"
+            className="bg-[#111111]/80 border-t border-zinc-800/50 overflow-hidden"
           >
             <Timeline
               tracks={tracks}

@@ -232,7 +232,7 @@ export default function CreatorOSPanel({ sessionId, ensureSession }: CreatorOSPa
 
   const StepIcon = ({ status }: { status: StepResult['status'] }) => {
     if (status === 'running') return <Loader2 className="w-3.5 h-3.5 text-zinc-400 animate-spin flex-shrink-0" />;
-    if (status === 'done') return <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />;
+    if (status === 'done') return <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981] flex-shrink-0" />;
     if (status === 'error') return <XCircle className="w-3.5 h-3.5 text-red-400 flex-shrink-0" />;
     return <CircleSlash className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />;
   };
@@ -247,7 +247,7 @@ export default function CreatorOSPanel({ sessionId, ensureSession }: CreatorOSPa
           </div>
           <h2 className="font-semibold">Creator OS</h2>
           {initialized && (
-            <span className="ml-auto flex items-center gap-1 text-[10px] text-emerald-400">
+            <span className="ml-auto flex items-center gap-1 text-[10px] text-[#10B981]">
               <Circle className="w-2 h-2 fill-current" />
               Connected
             </span>
